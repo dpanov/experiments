@@ -1,16 +1,23 @@
 {
-  "name": "parceljs-project-template",
+  "name": "simple-experiment",
   "version": "1.0.0",
-  "description": "ParcelJS-based project template",
+  "description": "Simple experiments",
   "scripts": {
     "dev": "parcel ./index.html --public-url / --out-dir ./dist",
-    "build": "parcel build ./index.html --public-url / --out-dir ./dist"
+    "build": "parcel build ./index.html --public-url / --out-dir ./dist",
+    "test": "jest"
   },
   "devDependencies": {
+    "jest": "^25.1.0",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.24.4",
-    "parcel-plugin-static-files-copy": "^2.3.1"
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "sass": "^1.24.4"
   },
   "author": "Dimitar Panov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-jest": "^25.1.0"
+  }
 }
